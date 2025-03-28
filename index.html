@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand">Supply Chain</div>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <button type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">Supplier <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="supplier/create.html">Create</a></li>
+                    <li><a href="supplier/update.html">Update</a></li>
+                    <li><a href="supplier/delete.html">Delete</a></li>
+                    <li><a href="supplier/search.html">Search</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">Product <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="product/add.html">Add</a></li>
+                    <li><a href="product/update.html">Update</a></li>
+                    <li><a href="product/delete.html">Delete</a></li>
+                    <li><a href="product/search.html">Search</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="purchase/order.html" class="nav-link2">Purchase Order</a></li>
+            
+            
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">Sale <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="sale/sale.html">Sale</a></li>
+                    <li><a href="sale/update.html">Update</a></li>
+                    <li><a href="sale/delete.html">Delete</a></li>
+                    <li><a href="sale/search.html">Search</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">Reports <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="reports/product-report.html">Product Report</a></li>
+                    <li><a href="reports/purchase-report.html">Purchase Report</a></li>
+                    <li><a href="reports/sale-report.html">Sales Report</a></li>
+                    <li><a href="reports/supplier-report.html">Supplier Report</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link2">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link2">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" onclick="logout()">Log Out</a>                
+            </li>
+        </ul>
+    </nav>
+
+    <div class="content-container">
+        <div class="content-area">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="img1.jpg" alt="Supply Chain">
+                        <div class="slide-content">
+                            <h2>Supply Chain Management</h2>
+                            <p>Streamline your operations</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img2.jpg" alt="Inventory">
+                        <div class="slide-content">
+                            <h2>Inventory Management</h2>
+                            <p>Track your products efficiently</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img3.jpg" alt="Orders">
+                        <div class="slide-content">
+                            <h2>Order Processing</h2>
+                            <p>Manage orders seamlessly</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn prev">❮</button>
+                <button class="slider-btn next">❯</button>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-envelope"></i> Email: Info@example.com</li>
+                    <li><i class="fas fa-phone"></i> Phone: +2156556 56655566</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Address: Your Address 123 Street</li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Product</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Purchase</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Order</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Sale</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Supply Chain Management. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Add this at the beginning of your script.js or in a script tag
+        // Check if user is logged in
+        document.addEventListener('DOMContentLoaded', function() {
+            // This is a simple example - in a real application, you would use proper session management
+            if (!sessionStorage.getItem('loggedIn')) {
+                window.location.href = 'login.html';
+            }
+        });
+
+        // Add logout function
+        function logout() {
+            sessionStorage.removeItem('loggedIn');
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html> 
